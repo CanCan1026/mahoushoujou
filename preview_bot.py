@@ -1,5 +1,12 @@
 import telebot
 import re
+import os  
+
+# 現在這行就不會報錯了
+TOKEN = os.environ.get('BOT_TOKEN')
+bot = telebot.TeleBot(TOKEN)
+
+# ... 下面原本的程式碼保持不變 ...
 
 # ⚠️ 魔法少女緊急提醒：這個 Token 測試完記得去找 @BotFather 點擊 Revoke Token 換一個新的喔！
 TOKEN = os.environ.get('BOT_TOKEN')
